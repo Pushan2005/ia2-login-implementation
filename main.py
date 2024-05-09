@@ -34,7 +34,7 @@ def register():
         cur.execute('INSERT INTO users (username, password) VALUES (?, ?)', (username, password))
         conn.commit()
         conn.close()
-        return 'Registration successful'
+        return render_template('registration_successful.html')
     else:
         return render_template('register.html')
 
