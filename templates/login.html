@@ -29,7 +29,8 @@
                 border-radius: 5px;
                 border: 1px solid #ccc;
             }
-            input[type="submit"] {
+            input[type="submit"],
+            .register-button {
                 width: 100%;
                 padding: 10px;
                 border-radius: 5px;
@@ -70,6 +71,14 @@
                     required
                 /><br />
                 <input type="submit" value="Login" />
+                <h5>Don't have an account?</h5>
+                <button
+                    type="submit"
+                    class="register-button"
+                    onclick="window.location.href='/register';"
+                >
+                    Register
+                </button>
             </form>
         </div>
     </body>
